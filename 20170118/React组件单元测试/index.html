@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>React组件单元测试 | ChenAibing | Blog</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="ChenAibing | Blog">
+    <meta name="author" content="Chen Aibing">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="ChenAibing | Blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/arta.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/http/" class="animsition-link">http<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/yarn/npm/" class="animsition-link">npm<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/react/" class="animsition-link">react<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/react/test/" class="animsition-link">test<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/yarn/" class="animsition-link">yarn<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/yarn/npm/工具/" class="animsition-link">工具<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about" class="animsition-link" title="about">About</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">ChenAibing | Blog</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/AlisonChenab" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-01-18T03:25:02.000Z" itemprop="datePublished">
+          2017-01-18
+      </time>
+    
+    
+    | 
+    <a href='/tags/react/'>react</a>,
+    
+    <a href='/tags/test/'>test</a>,
+    
+    <a href='/tags/陈小饼/'>陈小饼</a>
+    
+    
+</span>
+                <h1>React组件单元测试</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>针对react组件的单元测试，facebook提供了Test Utilities测试工具库，Airbnb基于此封装了使用更方便的Enzyme。另外普及一下React的测试框架Jest。</p>
+<h3 id="Test_Utilities"><a href="#Test_Utilities" class="headerlink" title="Test Utilities"></a>Test Utilities</h3><h4 id="Shallow_Rendering_-__u6D45_u6E32_u67D3"><a href="#Shallow_Rendering_-__u6D45_u6E32_u67D3" class="headerlink" title="Shallow Rendering - 浅渲染"></a>Shallow Rendering - 浅渲染</h4><p>Shallow rendering是指将组件渲染成虚拟DOM对象，本质上并没有加载进真实DOM，所以并不要求DOM环境，浅渲染只渲染组件的第一层，不涉及所有的子组件，因此在处理速度上非常快。<br><a id="more"></a><br>函数shallowRender返回浅渲染的虚拟DOM对象：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">import TestUtils from &apos;react/lib/ReactTestUtils.js&apos;;</div><div class="line"></div><div class="line">function shallowRender(Component, props)&#123;</div><div class="line">    const renderer = TestUtils.createRenderer();</div><div class="line">    renderer.render(&lt;Component &#123;...props&#125;/&gt;);</div><div class="line">    return renderer.getRenderOutput();</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>浅渲染适用于不需要DOM交互，不涉及子组件的情况，如简单验证属性设置是否正确，传值是否正常等。举个例子，验证Button组件phStyle设置为primary是否成功添加到className中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">import React from &apos;react&apos;;</div><div class="line">import assert from &apos;assert&apos;;</div><div class="line">import Button from &apos;../src/Button&apos;;</div><div class="line"></div><div class="line">describe(&quot;&lt;Button/&gt;&quot;, function()&#123;</div><div class="line">    it(&apos;phStyle设置为primary&apos;, ()=&gt;&#123;</div><div class="line">        const button = shallowRender(&lt;Button phStyle=&apos;primary&apos;&gt;&lt;/Button&gt;);</div><div class="line">        assert(button.props.className.match(&apos;primary&apos;));</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h4 id="renderIntoDocument_-__u5C06element_u6E32_u67D3_u6210_u771F_u5B9E_u7684DOM_u8282_u70B9"><a href="#renderIntoDocument_-__u5C06element_u6E32_u67D3_u6210_u771F_u5B9E_u7684DOM_u8282_u70B9" class="headerlink" title="renderIntoDocument - 将element渲染成真实的DOM节点"></a>renderIntoDocument - 将element渲染成真实的DOM节点</h4><p>renderIntoDocument将组件实例化，渲染成真实的DOM对象，因此操作环境也是要求必须是真实的DOM环境。渲染成真实DOM之后，可以进行交互，也可以查看子组件的状态。举个例子，验证Switch组件改变时是否触发了onChange：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">// ...</div><div class="line">import &#123;findDOMNode&#125; from &apos;react-dom&apos;;</div><div class="line">import Switch from &apos;../src/Switch&apos;;</div><div class="line"></div><div class="line">describe(&quot;&lt;Switch/&gt;&quot;, function()&#123;</div><div class="line">    it(&apos;改变时触发onChange&apos;, ()=&gt;&#123;</div><div class="line">        let checked = true;</div><div class="line">        const switchs = TestUtils.renderIntoDocument(&lt;Switch checked=&#123;checked&#125; onChange=&#123;()=&gt;&#123;checked=false&#125;&#125; /&gt;);</div><div class="line">        const checkbox = TestUtils.scryRenderedDOMComponentsWithTag(switchs, &apos;input&apos;)[0];</div><div class="line"></div><div class="line">        TestUtils.Simulate.change(checkbox);</div><div class="line">        assert.equal(checked, false);</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>初始设置checked为true，由于当前是真实DOM，用到了findDOMNode函数，查找DOM结构中的当前switch节点，手动改变，根据checked数值的对比判断是否执行了onChange。</p>
+<h4 id="Simulate_-__u6A21_u62DF_u7528_u6237_u64CD_u4F5C"><a href="#Simulate_-__u6A21_u62DF_u7528_u6237_u64CD_u4F5C" class="headerlink" title="Simulate - 模拟用户操作"></a>Simulate - 模拟用户操作</h4><p><code>Simulate.{eventName}(element,[eventData])</code>将组件渲染进真实DOM中，模拟人为操作，如点击、输入等。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">TestUtils.Simulate.click(node);</div><div class="line">TestUtils.Simulate.change(node);</div><div class="line">TestUtils.Simulate.keyDown(node, &#123;key: &quot;Enter&quot;, keyCode: 13, which: 13&#125;);</div></pre></td></tr></table></figure></p>
+<h4 id="u8282_u70B9_u67E5_u627E"><a href="#u8282_u70B9_u67E5_u627E" class="headerlink" title="节点查找"></a>节点查找</h4><p>Test Utilities提供的节点查找的方法仅适用于渲染成真实DOM节点的情况，如果是虚拟DOM是通过对<code>props.children</code>进行查找。</p>
+<h5 id="u865A_u62DFDOM_u7684_u8282_u70B9_u67E5_u627E"><a href="#u865A_u62DFDOM_u7684_u8282_u70B9_u67E5_u627E" class="headerlink" title="虚拟DOM的节点查找"></a>虚拟DOM的节点查找</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// ...</div><div class="line">it(&apos;checkbox: label传值显示正常&apos;, ()=&gt;&#123;</div><div class="line">    let label = &apos;测试&apos;;</div><div class="line">    const checkbox = shallowRender(&lt;Input type=&apos;checkbox&apos; label=&#123;label&#125; /&gt;);</div><div class="line"></div><div class="line">    assert.equal(checkbox.props.children[1].props.children, label);</div><div class="line">&#125;);</div><div class="line">// ...</div></pre></td></tr></table></figure>
+<p><code>checkbox.props.children[1].props.children</code>查找的是第二个子元素的内容。</p>
+<h5 id="u771F_u5B9EDOM_u7684_u8282_u70B9_u67E5_u627E"><a href="#u771F_u5B9EDOM_u7684_u8282_u70B9_u67E5_u627E" class="headerlink" title="真实DOM的节点查找"></a>真实DOM的节点查找</h5><p>对于真实DOM节点，可以是JavaScript原生的一些方法，如<code>findDOMNode(node).querySelector(...)</code>。以下是Test Utilities提供的方法：</p>
+<ul>
+<li>scryRenderedDOMComponentsWithClass：找出所有匹配指定className的节点</li>
+<li>findRenderedDOMComponentWithClass：与scryRenderedDOMComponentsWithClass用法相同，但只返回一个节点，如有零个或多个匹配的节点就报错</li>
+<li>scryRenderedDOMComponentsWithTag：找出所有匹配指定标签的节点</li>
+<li>findRenderedDOMComponentWithTag：与scryRenderedDOMComponentsWithTag用法相同，但只返回一个节点，如有零个或多个匹配的节点就报错</li>
+<li>scryRenderedComponentsWithType：找出所有符合指定子组件的节点</li>
+<li>findRenderedComponentWithType：与scryRenderedComponentsWithType用法相同，但只返回一个节点，如有零个或多个匹配的节点就报错</li>
+<li>findAllInRenderedTree：遍历当前组件所有的节点，只返回那些符合条件的节点</li>
+</ul>
+<p>更多信息：<a href="https://facebook.github.io/react/docs/test-utils.html" target="_blank" rel="external">Test Utilities</a></p>
+<h3 id="Enzyme"><a href="#Enzyme" class="headerlink" title="Enzyme"></a>Enzyme</h3><p>Enzyme模拟了JQuery的API封装了一套快速便捷的测试工具库，熟悉JQ的开发者能够更容易上手。</p>
+<h4 id="u4F7F_u7528"><a href="#u4F7F_u7528" class="headerlink" title="使用"></a>使用</h4><p>正式使用前有几点需要注意，否则会报错。</p>
+<ul>
+<li><p>首先，对于webpack的使用者，对于不同的React版本，配置中需要加上：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">/* webpack.config.js for React 0.14 */</div><div class="line">// ...</div><div class="line">externals: &#123;</div><div class="line">  &apos;cheerio&apos;: &apos;window&apos;,</div><div class="line">  &apos;react/addons&apos;: true,</div><div class="line">  &apos;react/lib/ExecutionEnvironment&apos;: true,</div><div class="line">  &apos;react/lib/ReactContext&apos;: true</div><div class="line">&#125;</div><div class="line">// ...</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/* webpack.config.js for React 15 */</div><div class="line">// ...</div><div class="line">externals: &#123;</div><div class="line">  &apos;react/addons&apos;: true,</div><div class="line">  &apos;react/lib/ExecutionEnvironment&apos;: true,</div><div class="line">  &apos;react/lib/ReactContext&apos;: true</div><div class="line">&#125;</div><div class="line">// ...</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>更多信息：<a href="http://airbnb.io/enzyme/docs/guides/webpack.html" target="_blank" rel="external">enzyme-guides</a></p>
+<ul>
+<li><p>针对不同版本React的安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/* React 0.13 */</div><div class="line">npm i react@0.13 --save</div><div class="line">npm i --save-dev enzyme</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/* React 0.14 */</div><div class="line">npm i --save react@0.14 react-dom@0.14</div><div class="line">npm i --save-dev react-addons-test-utils@0.14</div><div class="line">npm i --save-dev enzyme</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/* React 15 */</div><div class="line">npm i --save react@15.0.0-rc.2 react-dom@15.0.0-rc.2</div><div class="line">npm i --save-dev react-addons-test-utils@15.0.0-rc.2</div><div class="line">npm i --save-dev enzyme</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>更多信息：<a href="http://airbnb.io/enzyme/docs/installation/index.html" target="_blank" rel="external">enzyme-installation</a></p>
+<h4 id="API"><a href="#API" class="headerlink" title="API"></a>API</h4><h5 id="shallow"><a href="#shallow" class="headerlink" title="shallow"></a>shallow</h5><p>shallow方法是对Shallow Rendering的封装，同一个例子，获取<code>className</code>的方法通过<code>props()</code>方法返回。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// ...</div><div class="line">it(&apos;phStyle设置为primary&apos;, ()=&gt;&#123;</div><div class="line">    const button = shallow(&lt;Button phStyle=&apos;primary&apos;&gt;btn&lt;/Button&gt;);</div><div class="line">    assert(button.props().className.match(&apos;primary&apos;));</div><div class="line">&#125;);</div><div class="line">// ...</div></pre></td></tr></table></figure></p>
+<p>同一个例子，使用<code>find()</code>方法查找子节点，<code>text()</code>方法获取文本内容。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// ...</div><div class="line">it(&apos;checkbox: label传值显示正常&apos;, ()=&gt;&#123;</div><div class="line">    let label = &apos;测试&apos;;</div><div class="line">    const checkbox = shallow(&lt;Input type=&apos;checkbox&apos; label=&#123;label&#125; /&gt;);</div><div class="line"></div><div class="line">    assert.equal(checkbox.find(&apos;span&apos;).text(), label);</div><div class="line">&#125;);</div><div class="line">// ...</div></pre></td></tr></table></figure></p>
+<h5 id="mount"><a href="#mount" class="headerlink" title="mount"></a>mount</h5><p>mount将React组件加载为真实的DOM节点。和shallow的api相同，用<code>find()</code>方法查找子节点，模拟用户操作的方法封装为<code>simulate(enentType)</code>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// ...</div><div class="line">it(&apos;改变时触发onChange&apos;, ()=&gt;&#123;</div><div class="line">    let checked = true;</div><div class="line">    const switchs = mount(&lt;Switch checked=&#123;checked&#125; onChange=&#123;()=&gt;&#123;checked=false&#125;&#125; /&gt;);</div><div class="line">    </div><div class="line">    switchs.find(&apos;input&apos;).simulate(&apos;change&apos;);</div><div class="line">    assert.equal(checked, false);</div><div class="line">&#125;);</div><div class="line">// ...</div></pre></td></tr></table></figure></p>
+<h5 id="render"><a href="#render" class="headerlink" title="render"></a>render</h5><p>render方法采用第三方库Cheerio，将React组件渲染成静态的HTML片段并分析其HTML代码结构，返回一个Cheerio实例对象。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// ...</div><div class="line">it(&apos;checkbox: label传值显示正常&apos;, ()=&gt;&#123;</div><div class="line">    let label = &apos;测试&apos;;</div><div class="line">    const checkbox = render(&lt;Input type=&apos;checkbox&apos; label=&#123;label&#125; /&gt;);</div><div class="line"></div><div class="line">    assert.equal(checkbox.find(&apos;span&apos;).text(), label);</div><div class="line">&#125;);</div><div class="line">// ...</div></pre></td></tr></table></figure></p>
+<p>使用render方法时碰到一个错误：<code>_cheerio2.default.load is not a function</code>，还是比较普遍的，跟webpack配置有关系，修改如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">externals: &#123;</div><div class="line">        &apos;jsdom&apos;: &apos;window&apos;,</div><div class="line">        // &apos;cheerio&apos;: &apos;window&apos;,</div><div class="line">        // ...</div><div class="line">    &#125;,</div><div class="line">    module:&#123;</div><div class="line">        loaders:[</div><div class="line">            // ...</div><div class="line">            &#123;</div><div class="line">                test: /\.json$/,</div><div class="line">                loader: &apos;json&apos;,</div><div class="line">            &#125;</div><div class="line">        ]</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>更多信息：<a href="http://airbnb.io/enzyme/docs/api/index.html" target="_blank" rel="external">enzyme-api</a></p>
+<h3 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h3><h4 id="Jest"><a href="#Jest" class="headerlink" title="Jest"></a>Jest</h4><p>Jest是facebook基于Jasmine的开发的针对React的单元测试框架。查资料的时候有些文章会对比Enzyme和Jest，让人误以为是同一种东西的不同表达形式，但其实前者是测试工具库，后者是测试框架，更多的时候，两者是配合起来使用的。</p>
+<blockquote>
+<p>Jest is a JavaScript unit testing framework, used by Facebook to test services and React applications.</p>
+</blockquote>
+<p>普及到此为止，有需要之后会研究一下Jest，然后好好写一篇。</p>
+<p>更多信息：<a href="https://facebook.github.io/jest/docs/tutorial-react.html" target="_blank" rel="external">jest-react-tutorial</a></p>
+<h3 id="u603B_u7ED3"><a href="#u603B_u7ED3" class="headerlink" title="总结"></a>总结</h3><p>其实这一篇介绍的东西很少，却写了很多的例子，还记录了一些使用过程中让人困扰的报错。目前测试算是有一套比较完善的机制，但是总的来说东西比较旧比较少，查到的大部分资料都是年份比较久远的。😄</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/20170111/Yarn-模块管理工具/">
+        Yarn-模块管理工具 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
