@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/20170405/Hybrid%E6%A1%86%E6%9E%B6/</loc>
+    
+    <lastmod>2017-04-10T03:14:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/20170330/webpack%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</loc>
     
     <lastmod>2017-04-04T13:11:49.000Z</lastmod>
