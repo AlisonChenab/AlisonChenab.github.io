@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>Web Components | ChenAibing | Blog</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="ChenAibing | Blog">
+    <meta name="author" content="Chen Aibing">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="ChenAibing | Blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/arta.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/http/" class="animsition-link">http<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/yarn/npm/" class="animsition-link">npm<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/promise/" class="animsition-link">promise<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/react/" class="animsition-link">react<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/react/test/" class="animsition-link">test<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/yarn/" class="animsition-link">yarn<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/yarn/npm/工具/" class="animsition-link">工具<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/promise/异步编程/" class="animsition-link">异步编程<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about" class="animsition-link" title="about">About</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">ChenAibing | Blog</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/AlisonChenab" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2018-01-22T07:33:30.000Z" itemprop="datePublished">
+          2018-01-22
+      </time>
+    
+    
+    | 
+    <a href='/tags/陈小饼/'>陈小饼</a>,
+    
+    <a href='/tags/web-components/'>web components</a>
+    
+    
+</span>
+                <h1>Web Components</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="u4EC0_u4E48_u662FWeb_Components"><a href="#u4EC0_u4E48_u662FWeb_Components" class="headerlink" title="什么是Web Components"></a>什么是Web Components</h3><blockquote>
+<p>Web components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps.</p>
+</blockquote>
+<p>简单理解，Web Components提供了一种方法自定义HTML标签或重写HTML标签属性，使满足基本的外观和交互。</p>
+<p>举个例子，自定义<code>ph-button</code>标签，默认灰色边框，可通过phType修改不同的样式，点击出现弹框或Tooltip，都可以定义在组件内部，且使用方式和普通标签一致<code>&lt;ph-button&gt;按钮&lt;/ph-button&gt;</code>。</p>
+<a id="more"></a>
+<h3 id="u4E3A_u4EC0_u4E48_u9700_u8981Web_Components"><a href="#u4E3A_u4EC0_u4E48_u9700_u8981Web_Components" class="headerlink" title="为什么需要Web Components"></a>为什么需要Web Components</h3><p>流行的语言框架/库很多，组件库如果单纯满足其中一种语言环境，假设换了一种框架需要重写一套，而为了用户使用的便利，需要确保API和交互一致，这其中需要不断的沟通和跟进，损耗了大量人力。</p>
+<p>为此，Web Components很好的解决了以上的问题，不管是使用React、Angular或者其他，抽离出其中的核心逻辑，在此基础上用语言框架/库包装一层即可。此后维护组件库大部分的开发量集中在核心库上，只需修改一次，也不用再考虑一致性的问题。</p>
+<h3 id="u4F7F_u7528"><a href="#u4F7F_u7528" class="headerlink" title="使用"></a>使用</h3><p>Web Components由4个主要技术组成：</p>
+<ul>
+<li>自定义元素（Custom Elements）</li>
+<li>影子DOM（shadow DOM）</li>
+<li>HTML模板（HTML Template）</li>
+<li>HTML引用（HTML Import）</li>
+</ul>
+<p>以下详细介绍</p>
+<h4 id="Custom_Elements"><a href="#Custom_Elements" class="headerlink" title="Custom Elements"></a>Custom Elements</h4><p>Custom Elements即自定义元素，能够自定义/重定义元素的参数、行为和外观。简要的提一句，Custom Elements存在<code>v0</code>和<code>v1</code>版本，虽然某些概念是一样的，但API存在重大差异。其中<code>v0</code>版本是chrome浏览器独有的语法，已经不作为标准存在，而<code>v1</code>版本是现行标准并获得各大浏览器厂商的支持。</p>
+<p>（以下提到的都是<code>v1</code>标准规范的版本）</p>
+<h5 id="1-_Autonomous_Custom_Elements"><a href="#1-_Autonomous_Custom_Elements" class="headerlink" title="1. Autonomous Custom Elements"></a>1. Autonomous Custom Elements</h5><p>Autonomous Custom Elements指完全自定义的新的元素，在原生HTML标签中不存在的元素。</p>
+<p>一个简单的例子，继承类HTMLElement，通过传递attributes设置class。最后通过<code>customElements.define()</code>定义元素。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">class PhButton extends HTMLElement &#123;</span><br><span class="line">    constructor() &#123;</span><br><span class="line">        super()</span><br><span class="line"></span><br><span class="line">        this.defaultClass = &apos;ph-button&apos;</span><br><span class="line">        this.classMap = &#123;</span><br><span class="line">            primary: &apos;primary&apos;,</span><br><span class="line">            info: &apos;info&apos;,</span><br><span class="line">            success: &apos;success&apos;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    connectedCallback()&#123;</span><br><span class="line">        this._compile()</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    _compile()&#123;</span><br><span class="line">        this.classList.add(this.defaultClass)</span><br><span class="line">        this.addClassName()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    addClassName()&#123;</span><br><span class="line">        var attrs = this.formatAttributes(this.attributes)</span><br><span class="line"></span><br><span class="line">        for(var i in attrs)&#123;</span><br><span class="line">            var attr = this.classMap[attrs[i]]</span><br><span class="line">            if(attr)&#123;</span><br><span class="line">                this.classList.add(`$&#123;this.defaultClass&#125;-$&#123;attr&#125;`)</span><br><span class="line">                this.removeAttribute(i)</span><br><span class="line">            &#125;            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    formatAttributes(attrs)&#123;</span><br><span class="line">        let elemAttrs = &#123;&#125;</span><br><span class="line">        attrs = attrs ? attrs : this.attributes</span><br><span class="line"></span><br><span class="line">        for(let key in attrs)&#123;</span><br><span class="line">            if(key &amp;&amp; attrs[key].value)&#123;</span><br><span class="line">                elemAttrs[attrs[key].nodeName] = attrs[key].value</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return elemAttrs</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">customElements.define(&apos;ph-button&apos;, PhButton)</span><br></pre></td></tr></table></figure></p>
+<p>调用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;ph-button&gt;按钮&lt;/ph-button&gt;</span><br><span class="line">&lt;ph-button phstyle=&apos;primary&apos;&gt;按钮&lt;/ph-button&gt;</span><br></pre></td></tr></table></figure></p>
+<p>效果图：<br><img src="https://alisonchenab.github.io/images/web-components-01.png" alt="web-components-01"></p>
+<h5 id="2-_Customized_Built-in_Element"><a href="#2-_Customized_Built-in_Element" class="headerlink" title="2. Customized Built-in Element"></a>2. Customized Built-in Element</h5><p>Customized Built-in Element指拓展已有元素，在已有属性的基础上定义特殊交互形成新的元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class PhButton extends HTMLButtonElement &#123;</span><br><span class="line">    constructor() &#123;</span><br><span class="line">        super()</span><br><span class="line"></span><br><span class="line">        this.addEventListener(&apos;click&apos;, ()=&gt;&#123;</span><br><span class="line">            console.log(&apos;Hello World!&apos;)</span><br><span class="line">        &#125;, false)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">customElements.define(&apos;ph-button&apos;, PhButton, &#123;extends: &apos;button&apos;&#125;)</span><br></pre></td></tr></table></figure>
+<p>目前Chrome浏览器对Built-in Element的支持度低，需要借助类似<code>WebReflection/document-register-element</code>的polyfill来辅助完成，但在<code>constructor</code>方法还需要做特别的处理，感兴趣具体可以看 <a href="https://github.com/WebReflection/document-register-element#v1-caveat" target="_blank" rel="noopener">document-register-element#v1-caveat</a>。</p>
+<p>调用和Autonomous Custom Elements不同，如果使用相同的调用方式报错：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button is=&apos;ph-button&apos;&gt;Click Me!&lt;/button&gt;</span><br></pre></td></tr></table></figure></p>
+<p>效果图：<br><img src="https://alisonchenab.github.io/images/web-components-02.png" alt="web-components-02"></p>
+<h5 id="3-__u751F_u547D_u5468_u671F"><a href="#3-__u751F_u547D_u5468_u671F" class="headerlink" title="3. 生命周期"></a>3. 生命周期</h5><ul>
+<li><p>constructor<br>创建元素的一个实例。用于初始化状态、设置事件监听或创建<code>Shadow DOM</code>等。</p>
+</li>
+<li><p>connectedCallback<br>元素每次插入到DOM时都会调用。可在此阶段例如获取资源、渲染。</p>
+</li>
+<li><p>disconnectedCallback<br>元素每次从DOM中移除时都会调用。可在此阶段做一些清理工作，如移除事件监听等。</p>
+</li>
+<li><p>attributeChangedCallback<br>属性添加、移除、更新或替换，创建元素时也会调用它来获取初始值。但仅<code>observedAttributes</code>属性中列出的特性才会调用此回调。</p>
+</li>
+<li><p>adoptedCallback<br>自定义元素被移入新的document。例如，调用了<code>document.adoptNode(el)</code>从iframe中的文档流中移到当前文档流中。</p>
+</li>
+</ul>
+<p>源码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">class PhButton extends HTMLElement &#123;</span><br><span class="line">    constructor() &#123;</span><br><span class="line">        super()</span><br><span class="line"></span><br><span class="line">        this.clickHandle = this.clickHandle.bind(this)</span><br><span class="line">        document.addEventListener(&apos;click&apos;, this.clickHandle, false)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    clickHandle()&#123;</span><br><span class="line">        console.log(&apos;Hello World!&apos;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    static get observedAttributes()&#123;</span><br><span class="line">        return [&apos;value&apos;]</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    attributeChangedCallback(name, oldValue, newValue)&#123; // 将获取到的value新值放入元素内部</span><br><span class="line">        this.innerHTML = newValue</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    connectedCallback()&#123; // 设置属性value等于10</span><br><span class="line">        this.setAttribute(&apos;value&apos;, &apos;10&apos;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    disconnectedCallback()&#123; // 元素移除时一出绑定的事件</span><br><span class="line">        document.removeEventListener(&apos;click&apos;, this.clickHandle, false)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    adoptedCallback()&#123;</span><br><span class="line">        console.log(&apos;adoptedCallback!&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">customElements.define(&apos;ph-button&apos;, PhButton)</span><br></pre></td></tr></table></figure></p>
+<p>HTML：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;//172.24.232.211:8000/ph-button.html&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;ph-button&gt;&lt;/ph-button&gt;</span><br><span class="line"></span><br><span class="line">&lt;button onclick=&apos;remove()&apos;&gt;Remove&lt;/button&gt;</span><br><span class="line">&lt;button onClick=&apos;adopt()&apos;&gt;Adopt&lt;/button&gt;</span><br></pre></td></tr></table></figure></p>
+<p>Javascript：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// 触发disconnectedCallback</span><br><span class="line">var remove = function()&#123;</span><br><span class="line">    var phButton = document.getElementsByTagName(&apos;ph-button&apos;)[0]</span><br><span class="line">    document.body.removeChild(phButton)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 触发adoptedCallback</span><br><span class="line">var adopt = function()&#123;</span><br><span class="line">    var ele = getEle()</span><br><span class="line">    if(ele)&#123;</span><br><span class="line">        document.body.appendChild(document.adoptNode(ele))</span><br><span class="line">    &#125;        </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getEle()&#123;</span><br><span class="line">    var iframe = document.getElementsByTagName(&quot;iframe&quot;)[0],</span><br><span class="line">        ele = iframe.contentWindow.document.body.firstElementChild</span><br><span class="line"></span><br><span class="line">    if(ele)&#123;</span><br><span class="line">        document.body.appendChild(document.adoptNode(ele))</span><br><span class="line">        return ele</span><br><span class="line">    &#125;</span><br><span class="line">    return false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="4-__u547D_u540D_u89C4_u5219"><a href="#4-__u547D_u540D_u89C4_u5219" class="headerlink" title="4. 命名规则"></a>4. 命名规则</h5><ul>
+<li>和已有的HTML标签名不重复，如<code>div</code>，和某些固有属性名不重复，如<code>font-face</code></li>
+<li>防止命名冲突，名称可采用固定的规范，如带上组件特有的前缀等，<code>ph-*</code></li>
+<li>语义性和简洁，为用户更好的辨识和使用</li>
+<li>至少包含一个连字符</li>
+</ul>
+<p>更多关于<a href="https://w3c.github.io/webcomponents/spec/custom" target="_blank" rel="noopener"><code>[Custom Elements]</code></a>.</p>
+<h4 id="Shadow_DOM"><a href="#Shadow_DOM" class="headerlink" title="Shadow DOM"></a>Shadow DOM</h4><blockquote>
+<p>Shadow DOM is a functionality that allows the web browser to render DOM elements without putting them into the main document DOM tree. </p>
+</blockquote>
+<p>Shadow DOM是一种能够渲染DOM元素但不放入主文档流的功能。借助Shadow DOM，可以创建作用域DOM树，附加到DOM元素上，但与本身的子项分离开，被附着的元素称为宿主。在shadow DOM中操作都局限在宿主元素内部，外部设置的样式或其他操作无法控制同规则下的shadow DOM。</p>
+<p>就常用的一些元素如input、video等都含有shadow DOM，如写一个平时常用的输入框：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&apos;text&apos; value=&apos;test&apos; placeholder=&apos;please input...&apos;／&gt;</span><br></pre></td></tr></table></figure></p>
+<p>在浏览器中打开显示shadow DOM，可以看到input元素中还有一些平时不存在的内容：<br><img src="https://alisonchenab.github.io/images/web-components-03.png" alt="web-components-03"></p>
+<blockquote>
+<p><strong>Tip:</strong> 关于如何使用Chrome查看shadow DOM，在控制台右上角的<code>开发工具栏</code>下拉选择<code>Settings</code>出现设置面板，勾选<code>Elements</code>下的<code>Show user agent shadow DOM</code>即可。</p>
+</blockquote>
+<h5 id="1-__u521B_u5EFAshadow_DOM"><a href="#1-__u521B_u5EFAshadow_DOM" class="headerlink" title="1. 创建shadow DOM"></a>1. 创建shadow DOM</h5><p>用<code>attachShadow()</code>方法创建shadow DOM，通过innerHTML填充shadowRoot，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&apos;box&apos;&gt;盒子&lt;/div&gt;</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">var box = document.getElementById(&apos;box&apos;)</span><br><span class="line">var shadowRoot = box.attachShadow(&#123;mode: &apos;open&apos;&#125;)</span><br><span class="line"></span><br><span class="line">shadowRoot.innerHTML = `</span><br><span class="line">    &lt;span id=&apos;shadow&apos;&gt;shadow DOM&lt;/span&gt;</span><br><span class="line">`</span><br></pre></td></tr></table></figure></p>
+<p>给自定义元素创建shadow DOM：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class PhButton extends HTMLElement &#123;</span><br><span class="line">    constructor() &#123;</span><br><span class="line">        super()</span><br><span class="line">        </span><br><span class="line">        const shadowRoot = this.attachShadow(&#123;mode: &apos;open&apos;&#125;)</span><br><span class="line">        shadowRoot.innerHTML = `</span><br><span class="line">            &lt;span id=&apos;shadow&apos;&gt;shadow DOM&lt;/span&gt;</span><br><span class="line">        `</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">customElements.define(&apos;ph-button&apos;, PhButton)</span><br></pre></td></tr></table></figure></p>
+<p>这时候shadow DOM已经可以显示，但是存在一个问题，原本在元素内部的子项没有渲染，需要<code>slot</code>元素来指定子项的位置，如放置于shadow DOM后面，这样就可以正常显示子项。还可以通过设置slot的<code>name</code>来放置指定的元素，如果不设置name默认显示所有子项。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&apos;box&apos;&gt;</span><br><span class="line">    盒子</span><br><span class="line">    &lt;span slot=&apos;test&apos;&gt;test&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">var box = document.getElementById(&apos;box&apos;)</span><br><span class="line">var shadowRoot = box.attachShadow(&#123;mode: &apos;open&apos;&#125;)</span><br><span class="line"></span><br><span class="line">shadowRoot.innerHTML = `</span><br><span class="line">    &lt;span id=&apos;shadow&apos;&gt;shadow DOM&lt;/span&gt;</span><br><span class="line">    &lt;slot name=&apos;test&apos;&gt;&lt;/slot&gt;</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+<h5 id="2-__u8BBE_u5B9A_u6837_u5F0F"><a href="#2-__u8BBE_u5B9A_u6837_u5F0F" class="headerlink" title="2. 设定样式"></a>2. 设定样式</h5><p>可在shadow DOM中直接设置style，在该区域内设置的样式和页面其他位置的元素没有冲突。</p>
+<ul>
+<li><p>可通过<code>:host</code>指定当前宿主元素的默认样式，从外部给宿主定义的样式可覆盖<code>:host</code>设置的样式，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">shadowRoot.innerHTML = `</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        :host&#123;</span><br><span class="line">            font-weight: 800;</span><br><span class="line">        &#125;</span><br><span class="line">        #shadow&#123;</span><br><span class="line">            color: red;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">    &lt;span id=&apos;shadow&apos;&gt;shadow DOM&lt;/span&gt;</span><br><span class="line">    &lt;slot name=&apos;test&apos;&gt;&lt;/slot&gt;</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可通过<code>:host-context(宿主选择器)</code>对不同状态的宿主进行样式定制化，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&apos;box&apos; class=&apos;black-theme&apos;&gt;盒子&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    :host-context(.black-theme)&#123;</span><br><span class="line">        background-color: #333;</span><br><span class="line">        color: #fff;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可通过<code>::slotted(子项选择器)</code>对子项元素设置样式，但是只对顶层子元素生效，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&apos;box&apos;&gt;盒子&lt;span id=&apos;test&apos;&gt;test&lt;/span&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    ::slotted(#test)&#123;</span><br><span class="line">        color: red;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="3-__u4E8B_u4EF6"><a href="#3-__u4E8B_u4EF6" class="headerlink" title="3. 事件"></a>3. 事件</h5><p>给shadow DOM添加事件，通过<code>宿主元素.shadowRoot</code>可以定位到当前的影子节点，直接使用寻常查找DOM节点的方式不可行。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&apos;box&apos;&gt;盒子&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">var box = document.getElementById(&apos;box&apos;)</span><br><span class="line">var shadowRoot = box.attachShadow(&#123;mode: &apos;open&apos;&#125;)</span><br><span class="line"></span><br><span class="line">shadowRoot.innerHTML = `</span><br><span class="line">    &lt;span id=&apos;shadow&apos;&gt;shadow&lt;/span&gt;</span><br><span class="line">    &lt;slot&gt;&lt;/slot&gt;</span><br><span class="line">`</span><br><span class="line"></span><br><span class="line">var shadow = box.shadowRoot.querySelector(&apos;#shadow&apos;)</span><br><span class="line">shadow.addEventListener(&apos;click&apos;, function(e)&#123;</span><br><span class="line">    e.stopPropagation() // 在shadow DOM中同样存在冒泡的问题</span><br><span class="line">    console.log(&apos;shadow DOM!&apos;)</span><br><span class="line">&#125;, false)</span><br></pre></td></tr></table></figure></p>
+<p>提供了<code>slotchange</code>事件，监听子项添加或移除，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">var slot = box.shadowRoot.querySelector(&apos;slot&apos;)</span><br><span class="line">slot.addEventListener(&apos;slotchange&apos;, function(e)&#123;</span><br><span class="line">    console.log(e)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="HTML_Template"><a href="#HTML_Template" class="headerlink" title="HTML Template"></a>HTML Template</h4><p>以上示例的代码稍显得有些凌乱，可以借助<code>&lt;template&gt;</code>元素创建模板，声明DOM片段，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;template id=&quot;ph-button-template&quot;&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        #shadow&#123; </span><br><span class="line">            color: red; </span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">    &lt;span id=&apos;shadow&apos;&gt;shadow&lt;/span&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">class PhButton extends HTMLElement &#123;</span><br><span class="line">    constructor() &#123;</span><br><span class="line">        super()</span><br><span class="line"></span><br><span class="line">        let shadowRoot = this.attachShadow(&#123;mode: &apos;open&apos;&#125;)</span><br><span class="line">        const t = document.querySelector(&apos;#ph-button-template&apos;)</span><br><span class="line">        const instance = t.content.cloneNode(true)</span><br><span class="line">        shadowRoot.appendChild(instance)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">customElements.define(&apos;ph-button&apos;, PhButton)</span><br></pre></td></tr></table></figure></p>
+<p>template元素会产生一个<code>#document-fragment</code>节点，在页面中并不渲染。但这仅是作为插入一段DOM的推荐写法，并不是Web Component必须使用的。<br>目前在各浏览器都得到了支持。</p>
+<h4 id="HTML_Import"><a href="#HTML_Import" class="headerlink" title="HTML Import"></a>HTML Import</h4><p>可通过<code>link</code>标签在一个html文件中引入另一个html文件，设置ref为<code>import</code>，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&apos;import&apos; href=&apos;./ph-button.html&apos; id=&apos;temp&apos;&gt;</span><br><span class="line"></span><br><span class="line">... </span><br><span class="line">var temp = document.getElementById(&apos;temp&apos;)</span><br><span class="line">console.log(temp.import)</span><br></pre></td></tr></table></figure></p>
+<p>输出的<code>temp.import</code>是引入文件完整的document，从而达到<code>iframe</code>的效果。但目前兼容性还不够乐观。</p>
+<h3 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h3><p>目前有一些封装了Web Components的JavaScript库，如Polymer、X-Tag等，其中Polymer是大厂Google的产物。</p>
+<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><p><a href="https://developers.google.com/web/fundamentals/web-components/customelements?hl=zh-cn" target="_blank" rel="noopener">自定义元素 v1：可重用网络组件</a><br><a href="https://w3c.github.io/webcomponents/spec/custom/" target="_blank" rel="noopener">Custom Elements</a><br><a href="https://developers.google.com/web/fundamentals/web-components/shadowdom?hl=zh-cn" target="_blank" rel="noopener">Shadow DOM v1：独立的网络组件</a></p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/20170405/Hybrid框架/">
+        Hybrid框架 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
